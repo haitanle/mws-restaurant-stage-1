@@ -283,3 +283,19 @@ nav h1 a {
 img {
   max-width: 100%;
 }
+
+
+@media screen and (min-width: 215px) {
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter-options h2 {
+    width: 100%;
+  }
+
+  .filter-options select {
+    width: 50%;
+  }
+}
