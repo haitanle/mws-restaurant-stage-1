@@ -337,9 +337,9 @@ img {
     margin: 20px 0 50px;
   }
 
-/*  #restaurants-list p {
-    font-size: 1.3em;
-  } */ 
+  .filter-options {
+    width: 40%;
+  }  
 
   nav h1 a {
     font-size: 14pt;
