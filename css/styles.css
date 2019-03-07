@@ -163,8 +163,9 @@ nav h1 a {
 #restaurants-list li h1 {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 9pt;
-  font-weight: 200;
+  height: 25px;
+  font-size: 10pt;
+/*  font-weight: 200;*/
   letter-spacing: 0;
   line-height: 1.3;
   margin: 20px 0 10px;
@@ -303,6 +304,10 @@ img {
     width: 50%;
   }
 
+  #restaurants-list p {
+    height: 50px;
+  }
+
   nav h1 a {
     font-size: 12pt;
     letter-spacing: 8px;
@@ -314,6 +319,10 @@ img {
   #restaurants-list li {
     width: 33%;
   }
+
+/*  #restaurants-list p {
+    height: auto;
+  }*/
 
   .filter-options {
     width: 40%;
