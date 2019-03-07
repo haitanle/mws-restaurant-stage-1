@@ -310,13 +310,20 @@ img {
     margin: 20px 0 30px;
   }
 
-  #restaurants-list p {
-    height: 50px;
+  #restaurants-list p:nth-of-type(2) {
+    height: 75px;
+    margin-top: 5px;
   }
 
   nav h1 a {
     font-size: 12pt;
     letter-spacing: 8px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  #restaurants-list li h1 {
+    font-size: 13pt;
   }
 }
 
@@ -326,18 +333,20 @@ img {
     width: 31%;
   }
 
-/*  #restaurants-list p {
-    height: auto;
-  }*/
+  #restaurants-list li h1 {
+    margin: 20px 0 50px;
+  }
 
-  .filter-options {
-    width: 40%;
-  }  
+/*  #restaurants-list p {
+    font-size: 1.3em;
+  } */ 
 
   nav h1 a {
     font-size: 14pt;
     letter-spacing: 10px;
   }
+
+
 }
 
 
@@ -378,3 +387,5 @@ img {
     margin-right: auto;
   }
 }
+
+
