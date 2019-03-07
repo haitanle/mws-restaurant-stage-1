@@ -302,6 +302,11 @@ img {
     #restaurants-list li {
     width: 50%;
   }
+
+  nav h1 a {
+    font-size: 12pt;
+    letter-spacing: 8px;
+  }
 }
 
 
@@ -313,6 +318,11 @@ img {
   .filter-options {
     width: 40%;
   }  
+
+  nav h1 a {
+    font-size: 14pt;
+    letter-spacing: 10px;
+  }
 }
 
 
