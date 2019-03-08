@@ -40,7 +40,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   min-height: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 }
 #footer {
   background-color: #444;
@@ -195,10 +195,13 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-/*  position: fixed;*/
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
@@ -300,6 +303,19 @@ img {
 
 
 @media screen and (min-width: 215px) {
+
+  #reviews-list {
+    width: 90%;
+  }
+
+  #breadcrumb {
+    padding: 10px 0px 16px 15px;
+  }
+
+  #restaurant-name {
+    font-size: 2em;
+  }
+
   .filter-options {
     display: flex;
     flex-wrap: wrap;
@@ -337,6 +353,9 @@ img {
   #restaurants-list li h1 {
     font-size: 13pt;
   }
+
+  body, td, th, p {
+    font-size: 11pt;
 }
 
 
@@ -358,6 +377,9 @@ img {
     letter-spacing: 10px;
   }
 
+  #restaurant-container, #reviews-container {
+    width: 50%;
+  }
 
 }
 
