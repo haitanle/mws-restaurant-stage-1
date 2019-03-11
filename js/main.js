@@ -185,7 +185,6 @@ createRestaurantHTML = (restaurant) => {
   more.setAttribute('role','link');
   // console.log(more.ariaLabel);
   more.href = DBHelper.urlForRestaurant(restaurant);
-  console.log(more.href);
   li.append(more)
 
   return li
