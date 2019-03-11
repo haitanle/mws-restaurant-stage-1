@@ -163,6 +163,7 @@ class DBHelper {
       alt: restaurant.name,
       url: DBHelper.urlForRestaurant(restaurant)
       })
+      marker.options.keyboard = false;
       marker.addTo(newMap);
     return marker;
   } 
