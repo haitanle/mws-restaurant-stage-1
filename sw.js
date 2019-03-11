@@ -1,5 +1,10 @@
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+
 self.addEventListener('install', function(event){
- console.log('test');
   event.waitUntil(
     caches.open('restaurants-review-v3').then(function(cache){
       return cache.addAll([
@@ -19,8 +24,6 @@ self.addEventListener('install', function(event){
 
 
 self.addEventListener('fetch', function(event){
-  console.log('fetch cache');
-  console.log(event.request.url);
 
   var requestUrl = new URL(event.request.url);
 
