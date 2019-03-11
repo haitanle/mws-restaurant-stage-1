@@ -45,7 +45,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #footer {
   background-color: #444;
   color: #aaa;
-  font-size: 6pt;
+  font-size: .7em;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
@@ -183,7 +183,7 @@ nav h1 a {
 }
 #restaurants-list p {
   margin: 0;
-  font-size: 11pt;
+  /*ont-size: 11pt;*/
 }
 #restaurants-list li a {
   background-color: orange;
@@ -290,7 +290,7 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 10px 20px 10px;
+  padding: 10px 12px 10px;
   position: relative;
   /*width: 85%;*/
 }
@@ -356,11 +356,11 @@ img {
 
 @media screen and (min-width: 300px) {
   #restaurants-list li h1 {
-    font-size: 13pt;
+    font-size: 11pt;
   }
 
   body, td, th, p {
-    font-size: 11pt;
+    font-size: 13pt;
 }
 
 
@@ -376,6 +376,10 @@ img {
   .filter-options {
     width: 40%;
   }  
+
+  #restaurants-list li h1 {
+    margin: 15px 0 20px;
+  }
 
   nav h1 a {
     font-size: 14pt;
@@ -400,6 +404,14 @@ img {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .filter-options select {
+    font-size: 12pt;
+  }
+
+  .filter-options h2 {
+      line-height: 2;
   }
 }
 
