@@ -22,6 +22,17 @@ self.addEventListener('fetch', function(event){
   console.log('fetch cache');
   console.log(event.request.url);
 
+  var requestUrl = new URL(event.request.url);
+
+  if(requestUrl.origin === location.origin){
+    if (requestUrl.pathname === '/'){
+      event.respondWith(caches.match('/index.html'));
+    }
+    if (requestUrl.pathname.includes('?id=')){
+      event.respondWith(caches.match('/restaurant.html'));
+    }
+  }
+
   event.respondWith(
     caches.match(event.request).then(function(response){
       return response || fetch(event.request);
